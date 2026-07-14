@@ -1,0 +1,149 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* BODY */
+body {
+  background: #f5f7fb;
+  color: #333;
+  padding: 20px;
+}
+
+/* FORM */
+.form-container {
+  max-width: 500px;
+  margin: 0 auto 40px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-container label {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.form-container input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.form-container input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.form-container button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-container button:hover {
+  background: #357abd;
+}
+
+/* NOTES GRID */
+.notes-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* NOTE CARD */
+.note-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+}
+
+/* TEXT */
+.note-card h1 {
+  font-size: 20px;
+  color: #222;
+}
+
+.note-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* INPUTS (EDIT MODE) */
+.note-card input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* BUTTON GROUP */
+.note-card button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+/* BUTTON COLORS */
+.note-card button:nth-child(1) {
+  background: #ffc107;
+  color: #000;
+}
+
+.note-card button:nth-child(2) {
+  background: #dc3545;
+  color: white;
+}
+
+.note-card button:hover {
+  opacity: 0.85;
+}
+
+/* SAVE & CANCEL (EDIT MODE) */
+.note-card button:first-of-type {
+  background: #28a745;
+  color: white;
+}
+
+.note-card button:last-of-type {
+  background: #6c757d;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .form-container {
+    width: 100%;
+  }
+
+  .note-card h1 {
+    font-size: 18px;
+  }
+}
