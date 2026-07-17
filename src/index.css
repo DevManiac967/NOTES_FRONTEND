@@ -113,12 +113,12 @@ body {
 
 /* BUTTON COLORS */
 .note-card button:nth-child(1) {
-  background: #ffc107;
+  background: #ffc107ac;
   color: #000;
 }
 
 .note-card button:nth-child(2) {
-  background: #dc3545;
+  background: #f21a306c;
   color: white;
 }
 
